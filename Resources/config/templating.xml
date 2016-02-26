@@ -9,5 +9,13 @@
             <argument type="service" id="ivory_ck_editor.renderer" />
             <tag name="templating.helper" alias="ivory_ckeditor" />
         </service>
+
+        <service
+            id="ivory_ck_editor.templating.helper.javascript"
+            class="Ivory\CKEditorBundle\Templating\CKEditorJavascriptHelper"
+        >
+            <argument type="service" id="templating.form.renderer" />
+            <tag name="templating.helper" alias="ivory_ckeditor_javascript" />
+        </service>
     </services>
 </container>
